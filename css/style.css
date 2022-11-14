@@ -1,0 +1,233 @@
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+h1 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 38px;
+}
+h3 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 30px;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+.logo {
+    float: left;
+    text-align: center;
+    width: 23%;
+    padding: 1%;
+}
+nav {
+    float: right;
+    width: 73%;
+    padding: 1%;
+}
+nav ul {
+    width: 50%;
+    margin-left: auto;
+    padding: 20px;
+}
+nav ul li {
+    padding: 15px;
+}
+
+.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+.headshot {
+    float: right;
+    width: 40%;
+    margin-right: 10%;
+    text-align: end;
+}
+.aboutMe {
+    float: left;
+    width: 40%;
+    padding-top: 100px;
+    margin-left: 10%;
+}
+
+.flexContainer {
+    display: flex;
+}
+.userResearch img {
+    text-align: center;
+}
+.userResearch {
+    width: 33%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.userResearch ul {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.storyBoarding img {
+    text-align: center;
+}
+.storyBoarding {
+    width: 33%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.storyBoarding ul {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.userInterface img {
+    text-align: center;
+}
+.userInterface {
+    width: 33%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.userInterface ul {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.flexContainer h3 {
+    text-align: center;
+}
+.mySkills h1 {
+    text-align: center;
+    padding: 5%;
+}
+
+.goLlab {
+    grid-area: go-llab;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+.recycleBuddy {
+    grid-area: recycle;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+.doeRedesign {
+    grid-area: doe;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+.gollabContent {
+    grid-area: goContent;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+.recycleContent {
+    grid-area: reContent;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+.doeContent {
+    grid-area: doeContent;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+.workGrid {
+    display: grid;
+    grid-template-areas: 
+    'go-llab recycle doe'
+    'goContent reContent doeContent';
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.workGrid h3 {
+    text-align: center;
+}
+.myWork h1 {
+    text-align: center;
+    padding: 5%;
+}
+.allProj {
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+footer {
+    border-color: #373738;
+    padding: 15px;
+}
+.foot {
+    display: flex;
+    align-items: baseline;
+    float: left;
+    text-align: left;
+    width: 50%;
+}
+.logo2 {
+    float: right;
+    width: 47%;
+    text-align: end;
+    padding: 1.5%;
+}
+.foot ul li {
+    text-align: center;
+    padding: 15px;
+}
+
+.jumbotron {
+    width: 60%;
+    margin: 25px auto;
+    background-color: rgb(162, 183, 112, 0.8);
+}
+.cardTitles {
+    text-align: center;
+    margin: 30px auto;
+}
+.studydearch {
+    justify-content: center;
+}
+.lmao {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    justify-content: space-evenly;
+}
+.problem {
+    margin: 30px auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+    .userResearch {
+        width: 100%;
+    }
+    .storyBoarding {
+        width: 100%;
+    }
+    .userInterface {
+        width: 100%;
+    }
+    .workGrid {
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'go-llab'
+        'goContent'
+        'recycle'
+        'reContent'
+        'doe'
+        'doeContent';
+    }
+}
